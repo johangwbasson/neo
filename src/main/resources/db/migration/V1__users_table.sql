@@ -1,0 +1,8 @@
+CREATE TABLE users (
+    id UUID PRIMARY KEY,
+    email VARCHAR(256) NOT NULL,
+    hash VARCHAR(128) NOT NULL,
+    role VARCHAR(128) NOT NULL
+);
+
+INSERT INTO users VALUES ('8d65e708-d9a9-4514-8fb4-ca485844e384', 'admin@local.com', '$2a$10$j4s1VASJ/X.1oj7dSfDpqezNaab7Fc4FQAWcK5I2O0n8ekNsBQnge', 'ADMINISTRATOR');
